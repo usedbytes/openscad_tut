@@ -1,6 +1,7 @@
 /* Tutorial 1 - Basic 3D drawing */
 
-/* Comments are C-style, lines must end with a semicolon */
+/* Comments are C-style, and lines must end with a semicolon */
+// Or you can use C++ style if that's your thing
 
 /* 3D fundamental shapes are easy */
 sphere(r = 10, center = true);
@@ -17,3 +18,11 @@ color([0, 1, 0, 0.5]) rotate([0, -90, 0]) translate([20, 0, 0])
 /* The special variable $fn changes how rounded things are */
 translate([-20, 0, 0]) cylinder(r = 5, h = 10, $fn = 6);
 translate([-35, 0, 0]) cylinder(r1 = 5, r2 = 0, h = 5, $fn = 4);
+
+/* You can draw polyhedrons using vertices and triangles too */
+translate([0, 20, 0]) {
+	polyhedron(points = [ [0, 0, 0], [10, 0, 0], [0, 10, 0], [0, 0, 10] ],
+		/* Beware of "winding order" - points should go clockwise when
+		 * looking at the "outside" of the triangle */
+		faces = [ [0, 1, 2], [0, 2, 3], [0, 3, 1], [2, 1, 3] ]);
+}
