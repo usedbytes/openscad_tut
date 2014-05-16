@@ -21,7 +21,7 @@ translate([0, 80, 0]) {
  * http://www.thingiverse.com/thing:306539 */
 
 stl_height = 65;
-filename = "LOW_POLYGON_YODA_.stl";
+filename = "data/LOW_POLYGON_YODA_.stl";
 
 module stl_import(filename) {
 	import(filename);

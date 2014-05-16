@@ -26,9 +26,9 @@ translate([25, 0, 0]) {
 
 /* One of the most powerful operations is extruding .dxf files */
 translate([-20, 10, 0]) {
-	color([1, 0.32, 0, 1]) linear_extrude(5) import("makespace_logo_m.dxf");
+	color([1, 0.32, 0, 1]) linear_extrude(5) import("data/makespace_logo_m.dxf");
 	color([0.57, 1, 0, 1]) translate([0, 0, 5]) linear_extrude(5)
-		import("makespace_logo_s.dxf");
+		import("data/makespace_logo_s.dxf");
 }
 
 /* There's a special and somewhat bizarre operation called rotate_extrude */
