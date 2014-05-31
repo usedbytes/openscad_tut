@@ -1,6 +1,7 @@
 /* Tutorial 5 - Projection */
 
-/* OpenSCAD allows 3D objects to be turned into 2D shapes */
+/* OpenSCAD allows 3D objects to be turned into 2D shapes (the opposite of
+ * extrusion) */
 
 module thing() {
 	rotate([40, 0, 0]) cylinder(h = 25, r = 5, center = true);

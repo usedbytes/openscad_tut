@@ -3,6 +3,16 @@
 /* Comments are C-style, and lines must end with a semicolon */
 // Or you can use C++ style if that's your thing
 
+/* There are a few useful special symbols which can be used to modify the
+ * behaviour of a node:
+ * !: Dicards all other nodes and renders only this one (and its children) as
+ *    though it were the only one
+ * *: Ignore this node and all children (often easier than commenting out)
+ * %: Make this mode (and its children) render as "transparent"
+ * #: Make this node (and its children) render in "debug" mode - translucent
+ *    pink.
+ */
+
 /* 3D fundamental shapes are easy */
 sphere(r = 10, center = true);
 

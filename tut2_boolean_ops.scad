@@ -1,6 +1,7 @@
 /* Tutorial 2 - Boolean operations */
 
-/* $fn can be set globally */
+/* $fn can be set globally, beware this can significantly harm your rendering
+ * time! */
 $fn = 100;
 
 /* We can add, subtract and "AND" objects together */
